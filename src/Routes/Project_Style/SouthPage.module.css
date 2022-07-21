@@ -1,0 +1,123 @@
+.spanTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 0;
+  border-bottom: 3px solid red;
+  line-height: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  height: auto;
+  width: 89%;
+  /* border:1px solid red; */
+  margin: auto;
+}
+.southSection {
+  margin-top: 8px;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 7px;
+  /* border:1px solid rgb(39, 184, 75); */
+}
+.rightSouth {
+  padding :10px ;
+   border: 1px dotted  rgb(219, 219, 218);
+  width: 30%;
+  height: auto;
+}
+.southContainer{
+  margin-top: 8px;
+}
+.southSection > div:nth-child(1) {
+  width: 70%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+    border-right: 2px solid rgb(219, 219, 218);
+  /* border-bottom: 0.1rem solid #e1e1e1;*/
+}
+
+.southLeftSection > div:nth-child(1) {
+  height: auto;
+  width: 70%;
+  /* border:1px solid orangered; */
+}
+.southLeftSection > div:nth-child(2) {
+  height: auto;
+  width: 39%;
+  /* border:1px solid rgb(8, 8, 8); */
+}
+.southLeftSection,
+.southMiddleBox,
+.southRightBox {
+  display: flex;
+}
+.southBox {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  width: 97%;
+  border: 1px solid#e1e1e1;
+}
+.southBox > img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+.southBox > p {
+  padding: 3px 3px 3px 6px;
+  margin-top: 2%;
+  padding-bottom: 4%;
+  font-size: 17px;
+}
+.southBox > h1 {
+  padding: 3px 3px 3px 6px;
+  font-size: 28px;
+  font-weight: 650;
+}
+.southMiddleBox {
+  gap: 20px;
+  height: auto;
+  width: 96%;
+  margin: auto;
+  padding: 14px 14px 14px 0px;
+  border-bottom: 1px solid rgb(236, 230, 231);
+}
+.southMiddleBox > div:first-child {
+  width: 50%;
+  /* border:1px solid red */
+  /* border: 1px solid rgb(235, 15, 52) */
+}
+.southMiddleBox > div:last-child {
+  line-height: 20px;
+  font-size: 17px;
+  height: auto;
+  width: 55%;
+  /* border: 1px solid rgb(235, 15, 52) */
+}
+.southMiddleBox > div > img {
+  width: 100%;
+  /* border:1px solid yellow */
+}
+
+.southMiddleBox > p {
+  font-size: 17px;
+}
+.southRightBox{
+ font-weight: bold;
+  padding: 10px;
+  border: 1px solid  rgb(219, 219, 218);
+}
+.southRightBox>div:first-child{
+  padding: 5px;
+  width: 65%;
+  line-height: 20px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.southRightBox>div:last-child{
+  width: 35%;
+  /* border: 1px solid rgb(68, 54, 68); */
+}
+/* <----------------------------------SouthCSS End-------------------------------------------> */
