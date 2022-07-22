@@ -9,11 +9,7 @@ import SouthRightSideSection from './SouthRightSideSection';
 const SouthSection = ({southLeftData, southMiddleData, southRightData, SouthTitle}) => {
  
   return (
-
-    <div >
-
     <div className={styles.container}>
-
       <span className={styles.spanTitle}>{SouthTitle.current}</span>
       <div className={styles.southSection}>
         <div className={styles.southLeftSection}>
@@ -29,7 +25,6 @@ const SouthSection = ({southLeftData, southMiddleData, southRightData, SouthTitl
           <SouthRightSideSection southRightData={southRightData}  />
         </div>
       </div>
-
     </div>
   );
 };
