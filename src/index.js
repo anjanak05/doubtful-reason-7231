@@ -6,7 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import {
+  CrimeNewsBigBoxContextComponent,
+  CrimeNewsSmallBoxContextComponent,
+  CurrentAffNewsBigBoxContextComponent,
+  CurrentAffNewsSmallBoxContextComponent,
+  KandaNewsBigBoxContextComponent,
+  KandaNewsSmallBoxContextComponent,
   NationContextComponent,
+  OtherNewsBigBoxContextComponent,
+  OtherNewsSmallBoxContextComponent,
+  PoliticsNewsBigBoxContextComponent,
+  PoliticsNewsSmallBoxContextComponent,
   SouthContextComponent,
 } from './Context/AppContext';
 
@@ -19,7 +29,27 @@ root.render(
     <BrowserRouter>
       <NationContextComponent>
         <SouthContextComponent>
-          <App />
+          <KandaNewsBigBoxContextComponent>
+            <KandaNewsSmallBoxContextComponent>
+              <PoliticsNewsBigBoxContextComponent>
+                <PoliticsNewsSmallBoxContextComponent>
+                  <CurrentAffNewsBigBoxContextComponent>
+                    <CurrentAffNewsSmallBoxContextComponent>
+                      <CrimeNewsBigBoxContextComponent>
+                        <CrimeNewsSmallBoxContextComponent>
+                          <OtherNewsBigBoxContextComponent>
+                            <OtherNewsSmallBoxContextComponent>
+                              <App />
+                            </OtherNewsSmallBoxContextComponent>
+                          </OtherNewsBigBoxContextComponent>
+                        </CrimeNewsSmallBoxContextComponent>
+                      </CrimeNewsBigBoxContextComponent>
+                    </CurrentAffNewsSmallBoxContextComponent>
+                  </CurrentAffNewsBigBoxContextComponent>
+                </PoliticsNewsSmallBoxContextComponent>
+              </PoliticsNewsBigBoxContextComponent>
+            </KandaNewsSmallBoxContextComponent>
+          </KandaNewsBigBoxContextComponent>
         </SouthContextComponent>
       </NationContextComponent>
     </BrowserRouter>

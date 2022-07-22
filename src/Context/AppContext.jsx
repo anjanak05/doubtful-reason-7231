@@ -1,9 +1,7 @@
 import { createContext, useRef, useState, useEffect } from 'react';
 
 export const NationContext = createContext();
-
 export const NationContextComponent = ({ children }) => {
-  const NationTitle = useRef("NATION")
   const [nationLeftData, setNationLeftData] = useState([]);
   const [nationMiddleData, setNationMiddleData] = useState([]);
   const [nationRightData, setNationRightData] = useState([]);
@@ -43,17 +41,21 @@ export const NationContextComponent = ({ children }) => {
     midnation();
     rightnation();
   }, []);
-  
-return(
-    <NationContext.Provider value={ {nationRightData,nationLeftData, nationMiddleData ,NationTitle} }>{children}</NationContext.Provider>
-)
+
+  const NationTitle = useRef('NATION');
+
+  return (
+    <NationContext.Provider
+      value={{ NationTitle, nationLeftData, nationMiddleData, nationRightData }}
+    >
+      {children}
+    </NationContext.Provider>
+  );
 };
 
-
 export const SouthContext = createContext();
-
 export const SouthContextComponent = ({ children }) => {
-  const SouthTitle = useRef("SOUTH")
+  const SouthTitle = useRef('SOUTH');
   const [southLeftData, setSouthLeftData] = useState([]);
   const [southMiddleData, setSouthMiddleData] = useState([]);
   const [southRightData, setSouthRightData] = useState([]);
@@ -93,14 +95,268 @@ export const SouthContextComponent = ({ children }) => {
     midSouth();
     rightSouth();
   }, []);
-
-    
-return(
-    <SouthContext.Provider value={{southLeftData, southMiddleData,southRightData, SouthTitle}}>{children}</SouthContext.Provider>
-)
+  return (
+    <SouthContext.Provider
+      value={{ southLeftData, southMiddleData, southRightData, SouthTitle }}
+    >
+      {children}
+    </SouthContext.Provider>
+  );
 };
 
-// <---------------------------title-------------------------------------------------------->
+// <---------------------------Top Section End-------------------------------------------------------->
+// <------------------------------------------Mid Section Start------------------------------------------>
+
+export const KandaNewsBigBoxContext = createContext();
+export const KandaNewsBigBoxContextComponent = ({ children }) => {
+  const [kandaBigNewss, setKandaBigNewss] = useState([]);
+  const kandaTitle = useRef('KANADA');
+
+  const KandaBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/kanadaNewsBigBox`);
+      res = await res.json();
+      setKandaBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    KandaBigNews();
+  }, []);
+  return (
+    <KandaNewsBigBoxContext.Provider value={{ kandaBigNewss, kandaTitle }}>
+      {children}
+    </KandaNewsBigBoxContext.Provider>
+  );
+};
+
+export const KandaNewsSmallBoxContext = createContext();
+export const KandaNewsSmallBoxContextComponent = ({ children }) => {
+  const [kandaSmallNewss, setKandaSmallNewss] = useState([]);
+ 
+
+  const KandaSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/kanadaNewsSmallBox`);
+      res = await res.json();
+      setKandaSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    KandaSmallNews();
+  }, []);
+  return (
+    <KandaNewsSmallBoxContext.Provider value={kandaSmallNewss}>
+      {children}
+    </KandaNewsSmallBoxContext.Provider>
+  );
+};
 
 
+export const PoliticsBigBoxContext = createContext();
+export const PoliticsNewsBigBoxContextComponent = ({ children }) => {
+  const [politicsBigNewss, setPoliticsBigNewss] = useState([]);
+  const politicsTitle = useRef('POLITICS');
 
+  const politicsBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/politicsNewsBigBox`);
+      res = await res.json();
+      setPoliticsBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    politicsBigNews();
+  }, []);
+  return (
+    <PoliticsBigBoxContext.Provider value={{ politicsBigNewss, politicsTitle }}>
+      {children}
+    </PoliticsBigBoxContext.Provider>
+  );
+};
+
+export const PoliticsNewsSmallBoxContext = createContext();
+export const PoliticsNewsSmallBoxContextComponent = ({ children }) => {
+  const [politicsSmallNewss, setPoliticsSmallNewss] = useState([]);
+ 
+
+  const politicsSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/politicsNewsSmallBox`);
+      res = await res.json();
+      setPoliticsSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    politicsSmallNews();
+  }, []);
+  return (
+    <PoliticsNewsSmallBoxContext.Provider value={politicsSmallNewss}>
+      {children}
+    </PoliticsNewsSmallBoxContext.Provider>
+  );
+};
+
+export const CurrentAffBigBoxContext = createContext();
+export const CurrentAffNewsBigBoxContextComponent = ({ children }) => {
+  const [currentAffBigNewss, setCurrentAffBigNewss] = useState([]);
+  const currentAffTitle = useRef('CURRENT AFFAIRS');
+
+  const currentAffBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/curretnAffairNewsBigBox`);
+      res = await res.json();
+      setCurrentAffBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    currentAffBigNews();
+  }, []);
+  return (
+    <CurrentAffBigBoxContext.Provider value={{ currentAffBigNewss, currentAffTitle }}>
+      {children}
+    </CurrentAffBigBoxContext.Provider>
+  );
+};
+
+
+export const CurrentAffNewsSmallBoxContext = createContext();
+export const CurrentAffNewsSmallBoxContextComponent = ({ children }) => {
+  const [currentAffSmallNewss, setCurrentAffSmallNewss] = useState([]);
+ 
+
+  const currentAffSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/curretnAffairNewsSmallBox`);
+      res = await res.json();
+      setCurrentAffSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    currentAffSmallNews();
+  }, []);
+  return (
+    <CurrentAffNewsSmallBoxContext.Provider value={currentAffSmallNewss}>
+      {children}
+    </CurrentAffNewsSmallBoxContext.Provider>
+  );
+};
+
+
+export const CrimeBigBoxContext = createContext();
+export const CrimeNewsBigBoxContextComponent = ({ children }) => {
+  const [crimeBigNewss, setCrimeBigNewss] = useState([]);
+  const crimeTitle = useRef('CRIME');
+
+  const crimeBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/crimeNewsBigBox`);
+      res = await res.json();
+      setCrimeBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    crimeBigNews();
+  }, []);
+  return (
+    <CrimeBigBoxContext.Provider value={{ crimeBigNewss, crimeTitle }}>
+      {children}
+    </CrimeBigBoxContext.Provider>
+  );
+};
+
+export const CrimeNewsSmallBoxContext = createContext();
+export const CrimeNewsSmallBoxContextComponent = ({ children }) => {
+  const [crimeSmallNewss, setCrimeSmallNewss] = useState([]);
+ 
+
+  const crimeSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/crimeNewsSmallBox`);
+      res = await res.json();
+      setCrimeSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    crimeSmallNews();
+  }, []);
+  return (
+    <CrimeNewsSmallBoxContext.Provider value={crimeSmallNewss}>
+      {children}
+    </CrimeNewsSmallBoxContext.Provider>
+  );
+};
+
+export const OtherBigBoxContext = createContext();
+export const OtherNewsBigBoxContextComponent = ({ children }) => {
+  const [otherBigNewss, setOtherBigNewss] = useState([]);
+  const otherTitle = useRef('IN OTHER NEWS');
+
+  const otherBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/otherNationNewsBigBox`);
+      res = await res.json();
+      setOtherBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    otherBigNews();
+  }, []);
+  return (
+    <OtherBigBoxContext.Provider value={{ otherBigNewss, otherTitle }}>
+      {children}
+    </OtherBigBoxContext.Provider>
+  );
+};
+
+
+export const OtherNewsSmallBoxContext = createContext();
+export const OtherNewsSmallBoxContextComponent = ({ children }) => {
+  const [otherSmallNewss, setOtherSmallNewss] = useState([]);
+ 
+
+  const otherSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/otherNationNewsSmallBox`);
+      res = await res.json();
+      setOtherSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    otherSmallNews();
+  }, []);
+  return (
+    <OtherNewsSmallBoxContext.Provider value={otherSmallNewss}>
+      {children}
+    </OtherNewsSmallBoxContext.Provider>
+  );
+};
