@@ -4,6 +4,21 @@ import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+import {
+  CrimeNewsBigBoxContextComponent,
+  CrimeNewsSmallBoxContextComponent,
+  CurrentAffNewsBigBoxContextComponent,
+  CurrentAffNewsSmallBoxContextComponent,
+  KandaNewsBigBoxContextComponent,
+  KandaNewsSmallBoxContextComponent,
+  NationContextComponent,
+  OtherNewsBigBoxContextComponent,
+  OtherNewsSmallBoxContextComponent,
+  PoliticsNewsBigBoxContextComponent,
+  PoliticsNewsSmallBoxContextComponent,
+  SouthContextComponent,
+} from './Context/AppContext';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -11,7 +26,33 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <BrowserRouter>
+      <NationContextComponent>
+        <SouthContextComponent>
+          <KandaNewsBigBoxContextComponent>
+            <KandaNewsSmallBoxContextComponent>
+              <PoliticsNewsBigBoxContextComponent>
+                <PoliticsNewsSmallBoxContextComponent>
+                  <CurrentAffNewsBigBoxContextComponent>
+                    <CurrentAffNewsSmallBoxContextComponent>
+                      <CrimeNewsBigBoxContextComponent>
+                        <CrimeNewsSmallBoxContextComponent>
+                          <OtherNewsBigBoxContextComponent>
+                            <OtherNewsSmallBoxContextComponent>
+                              <App />
+                            </OtherNewsSmallBoxContextComponent>
+                          </OtherNewsBigBoxContextComponent>
+                        </CrimeNewsSmallBoxContextComponent>
+                      </CrimeNewsBigBoxContextComponent>
+                    </CurrentAffNewsSmallBoxContextComponent>
+                  </CurrentAffNewsBigBoxContextComponent>
+                </PoliticsNewsSmallBoxContextComponent>
+              </PoliticsNewsBigBoxContextComponent>
+            </KandaNewsSmallBoxContextComponent>
+          </KandaNewsBigBoxContextComponent>
+        </SouthContextComponent>
+      </NationContextComponent>
+    </BrowserRouter>
   </StrictMode>
 );
 
