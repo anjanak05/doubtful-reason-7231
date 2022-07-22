@@ -334,40 +334,177 @@
     }
   ],
 
-  "kanadaNewsBigBox": [
+  "telanganaNewsBigBox": [
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
-      "para": "Hero of another era: Remembering Prathap Pothen"
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-aliu91bhus1dvcfqko2hvehl11-20220721004105.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
     },
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
-      "para": "Hero of another era: Remembering Prathap Pothen"
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-ms3asfp3l2vdg12qtbgcjbuu67-20171220070503.jpeg",
+      "para": "Solar panels to dot ORR cycling track, cost Rs 88cr"
     },
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
-      "para": "Hero of another era: Remembering Prathap Pothen"
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8tad9p0mo5qtj8af6gk3c9cac2-20190604012818.jpeg",
+      "para": "8 jailed for molesting women during Bonalu"
     },
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
-      "para": "Hero of another era: Remembering Prathap Pothen"
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0fr7ofu4cef9a2dbis2tuej3p1-20161209024602.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
     }
   ],
-  "kanadaNewsSmallBox": [
+  "telanganaNewsSmallBox": [
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-aliu91bhus1dvcfqko2hvehl11-20220721004854.jpeg",
       "para": "Hero of another era Prathap Pothen"
     },
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-49uk480usfaqbbk2rct9voe8f1-20190218013956.jpeg",
       "para": "Hero of another era Prathap Pothen"
     },
     {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
-      "para": "Hero of another era Prathap Pothen"
-    },
-    {
-      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg",
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-vjrdqla2tvi1pljj0p2s7dd930-20220719003341.jpeg",
       "para": "Hero of another era Prathap Pothen"
     }
+    
+  ],
+  "tamilNewsBigBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-uilgmr073qh77c2pqhgfdhidc3-20170703160632.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-ppja25qn53k2log5gfnsq8suk3-20210626145718.jpeg",
+      "para": "Solar panels to dot ORR cycling track, cost Rs 88cr"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8tad9p0mo5qtj8af6gk3c9cac2-20190604012818.jpeg",
+      "para": "8 jailed for molesting women during Bonalu"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kom2qcfhn3ciao50eiqgbkgtn7-20220713074044.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    }
+  ],
+  "tamilNewsSmallBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/c54036d054c7c8253415ffcdfe34e2a9058cc7a4-tc-img-thumb.jpg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://dc-cdn.s3-ap-southeast-1.amazonaws.com/dc-Cover-20160118121135.png",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mokfgtfmsk3bpc9jfeouuk4a35-20220719070540.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    }
+    
+  ],
+  "andhraNewsBigBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o7jeshd5qb27bd6t4srl39slk7-20211117004954.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-aliu91bhus1dvcfqko2hvehl11-20220720225713.jpeg",
+      "para": "Solar panels to dot ORR cycling track, cost Rs 88cr"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o7jeshd5qb27bd6t4srl39slk7-20211117004954.jpeg",
+      "para": "8 jailed for molesting women during Bonalu"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-7djc68ag2kqgk301todkt4bb67-20220120073248.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    }
+  ],
+  "andhraNewsSmallBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-aliu91bhus1dvcfqko2hvehl11-20220720231257.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-up9eqh7f5sg0ifc8b4jfvddnm1-20210717133803.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-r8pdp9ot3af7v76mtg31eab2s6-20220714071834.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-kmtq7ogjn1u3ppuq6h03tm3lt4-20190517022548.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    }
+    
+  ],
+  "karnatkNewsBigBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-652ovhkibhg82kh6on274ihkn1-20180224034511.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-boklefqab95ktkfoocj0k4d392-20220224105231.jpeg",
+      "para": "Solar panels to dot ORR cycling track, cost Rs 88cr"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-boklefqab95ktkfoocj0k4d392-20220224080849.jpeg",
+      "para": "8 jailed for molesting women during Bonalu"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-i1c8dvb1ci2j7id75gjmjdg635-20220710135234.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    }
+  ],
+  "karnatkNewsSmallBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tsrcjb6aplebilco2hnmd2v447-20220709131135.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-1vaqrcesr7jr3qe057gbbbf744-20220707115353.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-1vaqrcesr7jr3qe057gbbbf744-20220707115353.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8rd1engpvmpmdnkn2ldga695j5-20220630132710.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    }
+    
+  ],
+  "keralaNewsBigBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mg89fudmjik4dl24647oc3vlf7-20180507061822.jpeg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/c54036d054c7c8253415ffcdfe34e2a9058cc7a4-tc-img-thumb.jpg",
+      "para": "Solar panels to dot ORR cycling track, cost Rs 88cr"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-hicqudhm2rl3a5t6ahnlga6bl1-20210918130940.jpeg",
+      "para": "8 jailed for molesting women during Bonalu"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/c54036d054c7c8253415ffcdfe34e2a9058cc7a4-tc-img-thumb.jpg",
+      "para": "Case booked against Arvind Dharmapuri for remarks against CM"
+    }
+  ],
+  "keralaNewsSmallBox": [
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-tsrcjb6aplebilco2hnmd2v447-20220709131135.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mg89fudmjik4dl24647oc3vlf7-20180507061822.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    },
+    {
+      "image": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-hicqudhm2rl3a5t6ahnlga6bl1-20210918130940.jpeg",
+      "para": "Hero of another era Prathap Pothen"
+    }
+    
   ]
 }

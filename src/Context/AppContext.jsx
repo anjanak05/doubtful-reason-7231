@@ -107,56 +107,56 @@ export const SouthContextComponent = ({ children }) => {
 // <---------------------------Top Section End-------------------------------------------------------->
 // <------------------------------------------Mid Section Start------------------------------------------>
 
-export const KandaNewsBigBoxContext = createContext();
-export const KandaNewsBigBoxContextComponent = ({ children }) => {
-  const [kandaBigNewss, setKandaBigNewss] = useState([]);
-  const kandaTitle = useRef('KANADA');
+export const TelanganaNewsBigBoxContext = createContext();
+export const TelanganaNewsBigBoxContextComponent = ({ children }) => {
+  const [telanganaBigNewss, setTelanganaBigNewss] = useState([]);
+  const telanganaTitle = useRef('TELANGANA');
 
-  const KandaBigNews = async () => {
+  const telanganaBigNews = async () => {
     try {
-      let res = await fetch(`http://localhost:9090/kanadaNewsBigBox`);
+      let res = await fetch(`http://localhost:9090/telanganaNewsBigBox`);
       res = await res.json();
-      setKandaBigNewss(res);
+      setTelanganaBigNewss(res);
     } catch (err) {
       console.log(err);
     }
   };
 
   useEffect(() => {
-    KandaBigNews();
+    telanganaBigNews();
   }, []);
   return (
-    <KandaNewsBigBoxContext.Provider value={{ kandaBigNewss, kandaTitle }}>
+    <TelanganaNewsBigBoxContext.Provider
+      value={{ telanganaBigNewss, telanganaTitle }}
+    >
       {children}
-    </KandaNewsBigBoxContext.Provider>
+    </TelanganaNewsBigBoxContext.Provider>
   );
 };
 
-export const KandaNewsSmallBoxContext = createContext();
-export const KandaNewsSmallBoxContextComponent = ({ children }) => {
-  const [kandaSmallNewss, setKandaSmallNewss] = useState([]);
- 
+export const TelanganaNewsSmallBoxContext = createContext();
+export const TelanganaNewsSmallBoxContextComponent = ({ children }) => {
+  const [telanganaSmallNewss, setTelanganaSmallNewss] = useState([]);
 
-  const KandaSmallNews = async () => {
+  const telanganaSmallNews = async () => {
     try {
-      let res = await fetch(`http://localhost:9090/kanadaNewsSmallBox`);
+      let res = await fetch(`http://localhost:9090/telanganaNewsSmallBox`);
       res = await res.json();
-      setKandaSmallNewss(res);
+      setTelanganaSmallNewss(res);
     } catch (err) {
       console.log(err);
     }
   };
 
   useEffect(() => {
-    KandaSmallNews();
+    telanganaSmallNews();
   }, []);
   return (
-    <KandaNewsSmallBoxContext.Provider value={kandaSmallNewss}>
+    <TelanganaNewsSmallBoxContext.Provider value={telanganaSmallNewss}>
       {children}
-    </KandaNewsSmallBoxContext.Provider>
+    </TelanganaNewsSmallBoxContext.Provider>
   );
 };
-
 
 export const PoliticsBigBoxContext = createContext();
 export const PoliticsNewsBigBoxContextComponent = ({ children }) => {
@@ -186,7 +186,6 @@ export const PoliticsNewsBigBoxContextComponent = ({ children }) => {
 export const PoliticsNewsSmallBoxContext = createContext();
 export const PoliticsNewsSmallBoxContextComponent = ({ children }) => {
   const [politicsSmallNewss, setPoliticsSmallNewss] = useState([]);
- 
 
   const politicsSmallNews = async () => {
     try {
@@ -227,17 +226,17 @@ export const CurrentAffNewsBigBoxContextComponent = ({ children }) => {
     currentAffBigNews();
   }, []);
   return (
-    <CurrentAffBigBoxContext.Provider value={{ currentAffBigNewss, currentAffTitle }}>
+    <CurrentAffBigBoxContext.Provider
+      value={{ currentAffBigNewss, currentAffTitle }}
+    >
       {children}
     </CurrentAffBigBoxContext.Provider>
   );
 };
 
-
 export const CurrentAffNewsSmallBoxContext = createContext();
 export const CurrentAffNewsSmallBoxContextComponent = ({ children }) => {
   const [currentAffSmallNewss, setCurrentAffSmallNewss] = useState([]);
- 
 
   const currentAffSmallNews = async () => {
     try {
@@ -258,7 +257,6 @@ export const CurrentAffNewsSmallBoxContextComponent = ({ children }) => {
     </CurrentAffNewsSmallBoxContext.Provider>
   );
 };
-
 
 export const CrimeBigBoxContext = createContext();
 export const CrimeNewsBigBoxContextComponent = ({ children }) => {
@@ -288,7 +286,6 @@ export const CrimeNewsBigBoxContextComponent = ({ children }) => {
 export const CrimeNewsSmallBoxContext = createContext();
 export const CrimeNewsSmallBoxContextComponent = ({ children }) => {
   const [crimeSmallNewss, setCrimeSmallNewss] = useState([]);
- 
 
   const crimeSmallNews = async () => {
     try {
@@ -335,11 +332,9 @@ export const OtherNewsBigBoxContextComponent = ({ children }) => {
   );
 };
 
-
 export const OtherNewsSmallBoxContext = createContext();
 export const OtherNewsSmallBoxContextComponent = ({ children }) => {
   const [otherSmallNewss, setOtherSmallNewss] = useState([]);
- 
 
   const otherSmallNews = async () => {
     try {
@@ -358,5 +353,207 @@ export const OtherNewsSmallBoxContextComponent = ({ children }) => {
     <OtherNewsSmallBoxContext.Provider value={otherSmallNewss}>
       {children}
     </OtherNewsSmallBoxContext.Provider>
+  );
+};
+
+// <-----------------------------------fekfce--------->
+
+
+
+export const TamilBigBoxContext = createContext();
+export const TamilNewsBigBoxContextComponent = ({ children }) => {
+  const [tamilBigNewss, setTamilBigNewss] = useState([]);
+  const tamilTitle = useRef('TAMIL NADU');
+
+  const tamilBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/tamilNewsBigBox`);
+      res = await res.json();
+      setTamilBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    tamilBigNews();
+  }, []);
+  return (
+    <TamilBigBoxContext.Provider value={{ tamilBigNewss, tamilTitle }}>
+      {children}
+    </TamilBigBoxContext.Provider>
+  );
+};
+
+export const TamilNewsSmallBoxContext = createContext();
+export const TamilNewsSmallBoxContextComponent = ({ children }) => {
+  const [tamilSmallNewss, setTamilSmallNewss] = useState([]);
+
+  const tamilSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/tamilNewsSmallBox`);
+      res = await res.json();
+      setTamilSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    tamilSmallNews();
+  }, []);
+  return (
+    <TamilNewsSmallBoxContext.Provider value={tamilSmallNewss}>
+      {children}
+    </TamilNewsSmallBoxContext.Provider>
+  );
+};
+
+export const AndhraBigBoxContext = createContext();
+export const AndhraNewsBigBoxContextComponent = ({ children }) => {
+  const [andhraBigNewss, setAndhraBigNewss] = useState([]);
+  const andhraTitle = useRef('ANDHRA PRADESH');
+
+  const andhraBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/andhraNewsBigBox`);
+      res = await res.json();
+      setAndhraBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    andhraBigNews();
+  }, []);
+  return (
+    <AndhraBigBoxContext.Provider
+      value={{ andhraBigNewss, andhraTitle }}
+    >
+      {children}
+    </AndhraBigBoxContext.Provider>
+  );
+};
+
+export const AndhraNewsSmallBoxContext = createContext();
+export const AndhraNewsSmallBoxContextComponent = ({ children }) => {
+  const [andhraSmallNewss, setAndhraSmallNewss] = useState([]);
+
+  const andhraSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/andhraNewsSmallBox`);
+      res = await res.json();
+      setAndhraSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    andhraSmallNews();
+  }, []);
+  return (
+    <AndhraNewsSmallBoxContext.Provider value={andhraSmallNewss}>
+      {children}
+    </AndhraNewsSmallBoxContext.Provider>
+  );
+};
+
+export const KeralaBigBoxContext = createContext();
+export const KeralaNewsBigBoxContextComponent = ({ children }) => {
+  const [keralaBigNewss, setKeralaBigNewss] = useState([]);
+  const keralaTitle = useRef('KERALA');
+
+  const keralaBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/keralaNewsBigBox`);
+      res = await res.json();
+      setKeralaBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    keralaBigNews();
+  }, []);
+  return (
+    <KeralaBigBoxContext.Provider value={{ keralaBigNewss, keralaTitle }}>
+      {children}
+    </KeralaBigBoxContext.Provider>
+  );
+};
+
+export const KeralaNewsSmallBoxContext = createContext();
+export const KeralaNewsSmallBoxContextComponent = ({ children }) => {
+  const [keralaSmallNewss, setKeralaSmallNewss] = useState([]);
+
+  const keralaSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/keralaNewsSmallBox`);
+      res = await res.json();
+      setKeralaSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    keralaSmallNews();
+  }, []);
+  return (
+    <KeralaNewsSmallBoxContext.Provider value={keralaSmallNewss}>
+      {children}
+    </KeralaNewsSmallBoxContext.Provider>
+  );
+};
+
+export const KarnatkBigBoxContext = createContext();
+export const KarnatkNewsBigBoxContextComponent = ({ children }) => {
+  const [karnatkBigNewss, setKarnatkBigNewss] = useState([]);
+  const karnatkTitle = useRef('KARNATAKA');
+
+  const karnatkBigNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/karnatkNewsBigBox`);
+      res = await res.json();
+      setKarnatkBigNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    karnatkBigNews();
+  }, []);
+  return (
+    <KarnatkBigBoxContext.Provider value={{ karnatkBigNewss, karnatkTitle }}>
+      {children}
+    </KarnatkBigBoxContext.Provider>
+  );
+};
+
+export const KarnatkNewsSmallBoxContext = createContext();
+export const KarnatkNewsSmallBoxContextComponent = ({ children }) => {
+  const [karnatkSmallNewss, setKarnatkSmallNewss] = useState([]);
+
+  const karnatkSmallNews = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/karnatkNewsSmallBox`);
+      res = await res.json();
+      setKarnatkSmallNewss(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    karnatkSmallNews();
+  }, []);
+  return (
+    <KarnatkNewsSmallBoxContext.Provider value={karnatkSmallNewss}>
+      {children}
+    </KarnatkNewsSmallBoxContext.Provider>
   );
 };
