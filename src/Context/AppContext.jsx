@@ -1,7 +1,13 @@
 import { createContext, useRef, useState, useEffect } from 'react';
 
 export const NationContext = createContext();
+
 export const NationContextComponent = ({ children }) => {
+
+
+export const NationContextComponent = ({ children }) => {
+  const NationTitle = useRef("NATION")
+
   const [nationLeftData, setNationLeftData] = useState([]);
   const [nationMiddleData, setNationMiddleData] = useState([]);
   const [nationRightData, setNationRightData] = useState([]);
@@ -42,6 +48,7 @@ export const NationContextComponent = ({ children }) => {
     rightnation();
   }, []);
 
+
   const NationTitle = useRef('NATION');
 
   return (
@@ -56,6 +63,19 @@ export const NationContextComponent = ({ children }) => {
 export const SouthContext = createContext();
 export const SouthContextComponent = ({ children }) => {
   const SouthTitle = useRef('SOUTH');
+
+  
+return(
+    <NationContext.Provider value={ {nationRightData,nationLeftData, nationMiddleData ,NationTitle} }>{children}</NationContext.Provider>
+)
+};
+
+
+export const SouthContext = createContext();
+
+export const SouthContextComponent = ({ children }) => {
+  const SouthTitle = useRef("SOUTH")
+
   const [southLeftData, setSouthLeftData] = useState([]);
   const [southMiddleData, setSouthMiddleData] = useState([]);
   const [southRightData, setSouthRightData] = useState([]);
@@ -95,6 +115,7 @@ export const SouthContextComponent = ({ children }) => {
     midSouth();
     rightSouth();
   }, []);
+
   return (
     <SouthContext.Provider
       value={{ southLeftData, southMiddleData, southRightData, SouthTitle }}
@@ -360,3 +381,16 @@ export const OtherNewsSmallBoxContextComponent = ({ children }) => {
     </OtherNewsSmallBoxContext.Provider>
   );
 };
+
+
+    
+return(
+    <SouthContext.Provider value={{southLeftData, southMiddleData,southRightData, SouthTitle}}>{children}</SouthContext.Provider>
+)
+};
+
+// <---------------------------title-------------------------------------------------------->
+
+
+
+

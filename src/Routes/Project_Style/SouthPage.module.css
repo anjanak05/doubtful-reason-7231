@@ -1,4 +1,5 @@
 .spanTitle {
+ay-3
   font-size: 22px;
   font-weight: 600;
   margin-left: 0;
@@ -27,16 +28,24 @@
   width: 30%;
   height: 1105px;
 }
-.southContainer {
+
+  padding :10px ;
+   border: 1px dotted  rgb(219, 219, 218);
+  width: 30%;
+  height: auto;
+}
+.southContainer{
   margin-top: 8px;
-  /* border:1px solid red */
+
 }
 .southSection > div:nth-child(1) {
   width: 70%;
   margin-bottom: 5%;
   padding-bottom: 5%;
+
   border-right: 2px solid rgb(219, 219, 218);
-  /* border-bottom: 0.1rem solid #e1e1e1;*/
+
+ /* border-bottom: 0.1rem solid #e1e1e1;*/
 }
 
 .southLeftSection > div:nth-child(1) {
@@ -104,6 +113,7 @@
 .southMiddleBox > p {
   font-size: 17px;
 }
+
 .southRightBox {
   height: 105px;
   font-weight: bold;
@@ -183,3 +193,23 @@
   margin-top: 1.5px;
   margin-bottom: 1%;
 }
+
+.southRightBox{
+ font-weight: bold;
+  padding: 10px;
+  border: 1px solid  rgb(219, 219, 218);
+}
+.southRightBox>div:first-child{
+  padding: 5px;
+  width: 65%;
+  line-height: 20px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.southRightBox>div:last-child{
+  width: 35%;
+  /* border: 1px solid rgb(68, 54, 68); */
+}
+/* <----------------------------------SouthCSS End-------------------------------------------> */
+

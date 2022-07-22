@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react';
 import styles from '../Project_Style/SouthPage.module.css';
 import {SouthContext} from '../../Context/AppContext';
@@ -15,10 +16,23 @@ const SouthMainPage = () => {
     <div className={styles.container}>
       <SouthSection
         southLeftData={southLeftData}
+
+import React, {  useContext } from 'react';
+import { SouthContext } from '../../Context/AppContext';
+import SouthSection from './SouthSection';
+
+const SouthMainPage = () => {
+  
+  const {southLeftData, southMiddleData,southRightData, SouthTitle} = useContext(SouthContext)
+  return (
+    <div>
+      <SouthSection southLeftData={southLeftData}
+
         southMiddleData={southMiddleData}
         southRightData={southRightData}
         SouthTitle={SouthTitle}
       />
+
       <Lines></Lines>
       <MidNewsBox
         bigNewss={kandaBigNewss}
@@ -26,6 +40,7 @@ const SouthMainPage = () => {
        title={kandaTitle}
       ></MidNewsBox>
      
+
     </div>
   );
 };

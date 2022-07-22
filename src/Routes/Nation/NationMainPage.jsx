@@ -1,4 +1,5 @@
 import { React, useContext } from 'react';
+
 import {
   CrimeBigBoxContext,
   CrimeNewsSmallBoxContext,
@@ -31,12 +32,24 @@ const NationMainPage = () => {
   const otherSmallNewss = useContext(OtherNewsSmallBoxContext);
   return (
     <div className={styles.container}>
+
+import { NationContext } from '../../Context/AppContext';
+import SouthSection from '../South/SouthSection';
+
+const NationMainPage = () => {
+
+  const {nationRightData,nationLeftData, nationMiddleData,NationTitle} = useContext(NationContext);
+
+  return (
+    <div>
+
       <SouthSection
         SouthTitle={NationTitle}
         southLeftData={nationLeftData}
         southRightData={nationRightData}
         southMiddleData={nationMiddleData}
       />
+
       <Lines></Lines>
       <MidNewsBox bigNewss={politicsBigNewss} smallNewss={politicsSmallNewss} title={politicsTitle} ></MidNewsBox>
       <Lines></Lines>
@@ -46,6 +59,7 @@ const NationMainPage = () => {
       <Lines></Lines>
       <MidNewsBox bigNewss={otherBigNewss} smallNewss={otherSmallNewss} title={otherTitle}></MidNewsBox>
     
+
     </div>
   );
 };

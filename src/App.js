@@ -8,7 +8,9 @@ import {
 // import NationMainPage from './Routes/Nation/NationMainPage';
 import Navbar from './Component/Navbar';
 import AllRoutes from './Routes/AllRoutes';
+
 // import MidNewsBox from './Routes/South/MidNewsBox';
+
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
 
 <Navbar></Navbar>
 <AllRoutes></AllRoutes>
+
 {/* <MidNewsBox></MidNewsBox> */}
+
       </Box>
     </ChakraProvider>
   );
