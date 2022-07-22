@@ -10,14 +10,22 @@ import {
   CrimeNewsSmallBoxContextComponent,
   CurrentAffNewsBigBoxContextComponent,
   CurrentAffNewsSmallBoxContextComponent,
-  KandaNewsBigBoxContextComponent,
-  KandaNewsSmallBoxContextComponent,
+  TelanganaNewsBigBoxContextComponent,
+  TelanganaNewsSmallBoxContextComponent,
   NationContextComponent,
   OtherNewsBigBoxContextComponent,
   OtherNewsSmallBoxContextComponent,
   PoliticsNewsBigBoxContextComponent,
   PoliticsNewsSmallBoxContextComponent,
   SouthContextComponent,
+  TamilNewsBigBoxContextComponent,
+  TamilNewsSmallBoxContextComponent,
+  AndhraNewsBigBoxContextComponent,
+  AndhraNewsSmallBoxContextComponent,
+  KeralaNewsBigBoxContextComponent,
+  KeralaNewsSmallBoxContextComponent,
+  KarnatkNewsBigBoxContextComponent,
+  KarnatkNewsSmallBoxContextComponent,
 } from './Context/AppContext';
 
 const container = document.getElementById('root');
@@ -29,8 +37,8 @@ root.render(
     <BrowserRouter>
       <NationContextComponent>
         <SouthContextComponent>
-          <KandaNewsBigBoxContextComponent>
-            <KandaNewsSmallBoxContextComponent>
+          <TelanganaNewsBigBoxContextComponent>
+            <TelanganaNewsSmallBoxContextComponent>
               <PoliticsNewsBigBoxContextComponent>
                 <PoliticsNewsSmallBoxContextComponent>
                   <CurrentAffNewsBigBoxContextComponent>
@@ -39,7 +47,24 @@ root.render(
                         <CrimeNewsSmallBoxContextComponent>
                           <OtherNewsBigBoxContextComponent>
                             <OtherNewsSmallBoxContextComponent>
-                              <App />
+                              <TamilNewsBigBoxContextComponent>
+                                <TamilNewsSmallBoxContextComponent>
+                                  <AndhraNewsBigBoxContextComponent>
+                                    <AndhraNewsSmallBoxContextComponent>
+                                      <KeralaNewsBigBoxContextComponent>
+                                        <KeralaNewsSmallBoxContextComponent>
+                                          <KarnatkNewsBigBoxContextComponent>
+                                            <KarnatkNewsSmallBoxContextComponent>
+                                            <App />
+                                            </KarnatkNewsSmallBoxContextComponent>
+                                          </KarnatkNewsBigBoxContextComponent>
+                                       
+                                        </KeralaNewsSmallBoxContextComponent>
+                                      </KeralaNewsBigBoxContextComponent>
+                                    </AndhraNewsSmallBoxContextComponent>
+                                  </AndhraNewsBigBoxContextComponent>
+                                </TamilNewsSmallBoxContextComponent>
+                              </TamilNewsBigBoxContextComponent>
                             </OtherNewsSmallBoxContextComponent>
                           </OtherNewsBigBoxContextComponent>
                         </CrimeNewsSmallBoxContextComponent>
@@ -48,8 +73,8 @@ root.render(
                   </CurrentAffNewsBigBoxContextComponent>
                 </PoliticsNewsSmallBoxContextComponent>
               </PoliticsNewsBigBoxContextComponent>
-            </KandaNewsSmallBoxContextComponent>
-          </KandaNewsBigBoxContextComponent>
+            </TelanganaNewsSmallBoxContextComponent>
+          </TelanganaNewsBigBoxContextComponent>
         </SouthContextComponent>
       </NationContextComponent>
     </BrowserRouter>
