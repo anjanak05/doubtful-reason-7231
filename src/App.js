@@ -9,6 +9,9 @@ import {
 import Navbar from './Component/Navbar';
 import AllRoutes from './Routes/AllRoutes';
 
+// import MidNewsBox from './Routes/South/MidNewsBox';
+
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -18,6 +21,9 @@ function App() {
 
 <Navbar></Navbar>
 <AllRoutes></AllRoutes>
+
+{/* <MidNewsBox></MidNewsBox> */}
+
       </Box>
     </ChakraProvider>
   );
