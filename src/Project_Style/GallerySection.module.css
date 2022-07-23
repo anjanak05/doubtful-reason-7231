@@ -1,0 +1,71 @@
+
+.galleryContainer {
+  width: 100%;
+  height: 550px;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  padding: 1.5% 1% 0.5% 1%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.spanTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 0;
+  border-bottom: 3px solid red;
+  line-height: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+}
+.galleryRightinner {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+.galleryRightinner:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+.galleryRightinner>img {
+ width: 40%;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ height: 100px;
+  }
+
+
+  .galleryRightinner>p{
+  
+    padding:3px 7px 7px 30px
+  }
+
+.galleryContainer > div:first-child {
+  width: 65%;
+  position: relative;
+}
+.Icon{
+    margin-right: 2%;
+}
+.galleryContainer > div:first-child>p{
+    position: absolute;
+    bottom: 70px;
+    width: 95%;
+
+    height: 70px;
+    background: rgba(70, 67, 59, 0.5); 
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    padding: 1%;
+}
+
+.galleryContainer > div:first-child > img {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1%;
+  width: 98%;
+}
+.galleryContainer > div:last-child {
+  width: 35%;
+}

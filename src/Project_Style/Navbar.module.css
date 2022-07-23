@@ -1,0 +1,74 @@
+.navbarLinks{
+  width: 90%;
+  margin :auto;
+    display: flex;
+    justify-Content: space-around;
+  border-bottom: 1px solid rgb(187, 185, 185);
+  border-top: 3px solid;
+
+  }
+
+ 
+/* .navbarContainer{
+  border:1px solid violet,
+} */
+.logoChronical{
+  /* border:1px solid violet; */
+  margin: auto;
+  margin-top: 0.5%;
+  text-align: center;
+  line-height: 50px;
+  width: 30%;
+}
+.logoChronical>img{
+
+  width: 70%;
+  margin: auto;
+}
+.navbarTopContainer{
+  display: flex;
+  
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 5%;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background:rgb(22, 12, 12);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.menuBold, .navtopheading{
+  font-weight: bold;
+}
+.navbarTopContainer>div:last-child{
+  margin-top: 0.9%;
+}
+.navbarTopContainer>div{
+  display: flex;
+  width: 50%;
+  /* border:1px solid violet; */
+}
+.inputBox{
+  margin-top: 0.6%;
+  margin-left: 30%;
+  background-color: blue;
+    width: 2%;
+  height: 15px;
+  border-radius: 2px;
+}
+
+.navtopheading{
+  margin-top: 1.7%;
+  margin-left: 1%;
+  margin-right: 2%;
+  color: white;
+  font-size: 17px;
+}
+.navIcons{
+ background-color: white;
+ margin-top: 1.7%;
+ border: none;
+ color: white;
+ font-size: 25px;
+}

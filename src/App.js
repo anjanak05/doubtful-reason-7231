@@ -1,25 +1,17 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,  theme,
-} from '@chakra-ui/react';
+import { ChakraProvider, Box, theme } from '@chakra-ui/react';
 
-// import SouthMainPage from './Routes/South/SouthMainPage';
-// import NationMainPage from './Routes/Nation/NationMainPage';
-import Navbar from './Component/Navbar';
+import Navbar from './Component/Navbar/Navbar';
 import AllRoutes from './Routes/AllRoutes';
-// import MidNewsBox from './Routes/South/MidNewsBox';
+import Footer from './Component/Footer/Footer';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box  fontSize="xl">
-{/* <SouthMainPage></SouthMainPage>
-<NationMainPage></NationMainPage> */}
-
-<Navbar></Navbar>
-<AllRoutes></AllRoutes>
-{/* <MidNewsBox></MidNewsBox> */}
+      <Box fontSize="xl">
+        <Navbar></Navbar>
+        <AllRoutes></AllRoutes>
+        <Footer></Footer>
       </Box>
     </ChakraProvider>
   );

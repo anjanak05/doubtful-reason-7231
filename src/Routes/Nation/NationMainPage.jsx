@@ -11,9 +11,10 @@ import {
   PoliticsNewsSmallBoxContext,
 } from '../../Context/AppContext';
 import SouthSection from '../South/SouthSection';
-import styles from '../Project_Style/SouthPage.module.css';
+import styles from '../../Project_Style/SouthPage.module.css';
 import MidNewsBox from '../South/MidNewsBox';
-import Lines from '../Project_Style/Lines';
+import Lines from '../../Project_Style/Lines';
+import GallerySection from './GallerySection';
 
 const NationMainPage = () => {
   const { NationTitle, nationLeftData, nationMiddleData, nationRightData } = useContext(NationContext);
@@ -37,6 +38,7 @@ const NationMainPage = () => {
         southRightData={nationRightData}
         southMiddleData={nationMiddleData}
       />
+      <GallerySection></GallerySection>
       <Lines></Lines>
       <MidNewsBox bigNewss={politicsBigNewss} smallNewss={politicsSmallNewss} title={politicsTitle} ></MidNewsBox>
       <Lines></Lines>

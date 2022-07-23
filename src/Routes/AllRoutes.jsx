@@ -8,11 +8,9 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/NationMainPage" element={<NationMainPage />}></Route>
+        <Route path="/" element={<NationMainPage />}></Route>
         <Route path="/SouthMainPage" element={<SouthMainPage />}></Route>
-        <Route path="/NationMainPage" element={<NationMainPage />}></Route>
-        <Route path="/SouthMainPage" element={<SouthMainPage />}></Route>
-        <Route path="/SouthMainPage" element={<SouthMainPage />}></Route>
+       
              </Routes>
     </div>
   );

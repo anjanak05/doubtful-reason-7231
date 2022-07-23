@@ -26,6 +26,7 @@ import {
   KeralaNewsSmallBoxContextComponent,
   KarnatkNewsBigBoxContextComponent,
   KarnatkNewsSmallBoxContextComponent,
+  GalleryRightContextComponent,
 } from './Context/AppContext';
 
 const container = document.getElementById('root');
@@ -55,7 +56,9 @@ root.render(
                                         <KeralaNewsSmallBoxContextComponent>
                                           <KarnatkNewsBigBoxContextComponent>
                                             <KarnatkNewsSmallBoxContextComponent>
-                                            <App />
+                                              <GalleryRightContextComponent> <App />
+                                              </GalleryRightContextComponent>
+                                           
                                             </KarnatkNewsSmallBoxContextComponent>
                                           </KarnatkNewsBigBoxContextComponent>
                                        

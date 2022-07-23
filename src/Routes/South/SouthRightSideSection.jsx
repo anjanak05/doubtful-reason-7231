@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Project_Style/SouthPage.module.css';
+import styles from '../../Project_Style/SouthPage.module.css';
 
 
 const SouthRightSideSection = ({southRightData}) => {

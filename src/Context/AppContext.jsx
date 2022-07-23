@@ -557,3 +557,26 @@ export const KarnatkNewsSmallBoxContextComponent = ({ children }) => {
     </KarnatkNewsSmallBoxContext.Provider>
   );
 };
+
+export const GalleryRightContext = createContext();
+export const GalleryRightContextComponent = ({children})=>{
+  const [gallery, setGallery] = useState([])
+  const galleryRight = async () => {
+    try {
+      let res = await fetch(`http://localhost:9090/galleryRight`);
+      res = await res.json();
+      setGallery(res);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    galleryRight();
+  }, []);
+return (
+  <GalleryRightContext.Provider value={gallery}>
+{children}
+  </GalleryRightContext.Provider>
+)
+}
