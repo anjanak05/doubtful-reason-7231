@@ -1,6 +1,6 @@
 import React from 'react';
 import { SimpleGrid } from '@chakra-ui/react';
-import styles from '../Project_Style/SouthPage.module.css';
+import styles from '../../Project_Style/SouthPage.module.css';
 // import { KandaNewsBigBoxContext, KandaNewsSmallBoxContext } from '../../Context/AppContext';
 
 const MidNewsBox = ({bigNewss,  smallNewss, title}) => {

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import styles from '../Project_Style/SouthPage.module.css';
+import styles from '../../Project_Style/SouthPage.module.css';
 import {
   AndhraBigBoxContext,
   AndhraNewsSmallBoxContext,
@@ -15,7 +15,7 @@ import {
 } from '../../Context/AppContext';
 import SouthSection from './SouthSection';
 import MidNewsBox from './MidNewsBox';
-import Lines from '../Project_Style/Lines';
+import Lines from '../../Project_Style/Lines';
 
 const SouthMainPage = () => {
   const { southLeftData, southMiddleData, southRightData, SouthTitle } =

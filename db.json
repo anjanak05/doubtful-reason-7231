@@ -506,5 +506,15 @@
       "para": "Hero of another era Prathap Pothen"
     }
     
+  ],
+  "galleryRight":[
+    {"img":"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jcdppve1p57gslfudkjj2o3sd5-20220502133355.Medi.jpeg",
+  "para":"In Pictures | India reels under intense heatwave"},
+  {"img":"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-mbrh668e4c5hlkkhd8ul33njk5-20220412003743.Medi.jpeg",
+  "para":"In Pictures | India reels under intense heatwave"},
+  {"img":"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8g2q1og4pt9pmf7nan3h7rjjg1-20211119134558.Medi.jpeg",
+  "para":"In Pictures | India reels under intense heatwave"}
+  ,{"img":"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-1nskatpnrbcp2vgdumm7bkn1e6-20211105110754.Medi.jpeg",
+  "para":"In Pictures | India reels under intense heatwave"}
   ]
 }
