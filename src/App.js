@@ -5,6 +5,9 @@ import Navbar from './Component/Navbar/Navbar';
 import AllRoutes from './Routes/AllRoutes';
 import Footer from './Component/Footer/Footer';
 
+
+
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -12,6 +15,8 @@ function App() {
         <Navbar></Navbar>
         <AllRoutes></AllRoutes>
         <Footer></Footer>
+
+      
       </Box>
     </ChakraProvider>
   );

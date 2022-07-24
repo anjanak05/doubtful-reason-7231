@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from '../../Project_Style/Navbar.module.css';
 import { Menu, MenuButton,Icon, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
- import {  FaAlignJustify, FaAngleDoubleRight, FaTwitterSquare,FaFacebookSquare, FaInstagram } from "react-icons/fa";
+ import {  FaAlignJustify, FaAngleDoubleRight, FaTwitterSquare,
+   FaFacebookSquare, FaInstagram } from "react-icons/fa";
 //  import {GrFacebook} from "react-icons/gr";
 // //  import {AiFillTwitterCircle} from "react-icons/ai";
 
