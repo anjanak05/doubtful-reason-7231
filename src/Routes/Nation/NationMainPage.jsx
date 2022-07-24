@@ -14,6 +14,7 @@ import SouthSection from '../South/SouthSection';
 import styles from '../../Project_Style/SouthPage.module.css';
 import MidNewsBox from '../South/MidNewsBox';
 import Lines from '../../Project_Style/Lines';
+import BreadCrumb from '../../Component/BreadCrumb';
 import GallerySection from './GallerySection';
 
 const NationMainPage = () => {
@@ -32,6 +33,7 @@ const NationMainPage = () => {
   const otherSmallNewss = useContext(OtherNewsSmallBoxContext);
   return (
     <div className={styles.container}>
+      <BreadCrumb breadTitle={NationTitle}></BreadCrumb>
       <SouthSection
         SouthTitle={NationTitle}
         southLeftData={nationLeftData}

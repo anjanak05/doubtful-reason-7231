@@ -16,6 +16,8 @@ import {
 import SouthSection from './SouthSection';
 import MidNewsBox from './MidNewsBox';
 import Lines from '../../Project_Style/Lines';
+import BreadCrumb from '../../Component/BreadCrumb';
+
 
 const SouthMainPage = () => {
   const { southLeftData, southMiddleData, southRightData, SouthTitle } =
@@ -37,6 +39,7 @@ const SouthMainPage = () => {
   const karnatkSmallNewss = useContext(KarnatkNewsSmallBoxContext)
   return (
     <div className={styles.container}>
+      <BreadCrumb breadTitle={SouthTitle}></BreadCrumb>
       <SouthSection
         southLeftData={southLeftData}
         southMiddleData={southMiddleData}
